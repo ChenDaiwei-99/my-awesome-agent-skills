@@ -4,10 +4,10 @@ Use citations to preserve the distinction between local notes, generated source 
 
 ## Local Citations
 
-- Human note: `[[notes/.../note-name]]`
-- Source record: `[[sources/pdfs/paper-name]]`
-- Wiki synthesis: `[[wiki/syntheses/topic-name]]`
-- Concept or entity: `[[wiki/concepts/concept-name]]`
+- Personal note: `[[personal-notes/.../note-name]]`
+- Source record: `[[knowledge-base/sources/pdfs/paper-name]]`
+- Wiki synthesis: `[[knowledge-base/wiki/syntheses/topic-name]]`
+- Concept or entity: `[[knowledge-base/wiki/concepts/concept-name]]`
 
 ## External Citations
 

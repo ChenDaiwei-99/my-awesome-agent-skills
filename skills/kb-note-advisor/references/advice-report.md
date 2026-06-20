@@ -13,7 +13,7 @@ tags: []
 
 # Advisory Review: Note Title
 
-Reviewed note: [[notes/path/to-note]]
+Reviewed note: [[personal-notes/path/to-note]]
 
 ## Scope
 

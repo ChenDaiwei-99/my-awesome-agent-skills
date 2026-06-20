@@ -1,43 +1,45 @@
 # Index, Log, and Review Formats
 
-## wiki/index.md
+## knowledge-base/wiki/index.md
 
 ```markdown
 # Knowledge Base Index
 
 ## Sources
-- [[sources/pdfs/example-paper]]
-- [[sources/github/owner-repo]]
+- [[knowledge-base/sources/pdfs/example-paper]]
+- [[knowledge-base/sources/github/owner-repo]]
 
 ## Concepts
-- [[wiki/concepts/example-concept]]
+- [[knowledge-base/wiki/concepts/example-concept]]
 
 ## Entities
-- [[wiki/entities/example-entity]]
+- [[knowledge-base/wiki/entities/example-entity]]
 
 ## Syntheses
-- [[wiki/syntheses/example-topic]]
+- [[knowledge-base/wiki/syntheses/example-topic]]
 
-## Human Notes Entry Points
-- [[notes/inbox/example-note]]
+## Personal Notes Entry Points
+- [[personal-notes/fleeting/example-note]]
+- [[personal-notes/projects/example-project/timeline]]
+- [[personal-notes/permanent/principles/example-principle]]
 
 ## Advisory Reports
-- [[wiki/note-advice/example-note-review]]
+- [[knowledge-base/wiki/note-advice/example-note-review]]
 ```
 
 Keep the index curated. It should help the user navigate major knowledge areas.
 
-## wiki/log.md
+## knowledge-base/wiki/log.md
 
 Append entries in reverse chronological or chronological order according to the existing file. If the file is empty, use chronological order.
 
 ```markdown
 # KB Log
 
-- YYYY-MM-DD HH:mm - Ingested [[sources/pdfs/example-paper]]; updated [[wiki/index]].
+- YYYY-MM-DD HH:mm - Ingested [[knowledge-base/sources/pdfs/example-paper]]; updated [[knowledge-base/wiki/index]].
 ```
 
-## wiki/review.md
+## knowledge-base/wiki/review.md
 
 ```markdown
 # KB Review Queue
@@ -58,5 +60,5 @@ Review items are for claims or decisions that should not be resolved silently.
 When saving an advisor report, add it to the index and log:
 
 ```markdown
-- YYYY-MM-DD HH:mm - Saved note advice [[wiki/note-advice/example-note-review]] for [[notes/areas/example-note]].
+- YYYY-MM-DD HH:mm - Saved note advice [[knowledge-base/wiki/note-advice/example-note-review]] for [[personal-notes/projects/example-project/notes]].
 ```

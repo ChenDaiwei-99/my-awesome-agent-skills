@@ -1,6 +1,6 @@
 # Source Record Schema
 
-Every ingested source gets exactly one markdown source record under `sources/`.
+Every ingested external source gets exactly one markdown source record under `knowledge-base/sources/`. Raw files and snapshots live under `knowledge-base/raw/` and are treated as immutable.
 
 ## Frontmatter
 
@@ -55,3 +55,4 @@ Use `source_kind: pdf | github | web | other`.
 - Keep summaries useful for first-pass retrieval, but never imply that the markdown record replaces the original source.
 - Use page numbers, section names, commit hashes, file paths, or URLs as locators when available.
 - If the source contradicts existing wiki or human notes, add a review item instead of overwriting existing claims.
+- Link `personal-notes/projects/*/paper-survey.md` entries to source records rather than duplicating source summaries. Adding or repairing these links is allowed directly; ask for approval before adding substantive survey prose.

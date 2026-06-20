@@ -18,7 +18,7 @@ The markdown record must include:
 2. Extract text using available local tools. If extraction is partial, say so in `Open Questions`.
 3. Read abstract, introduction, methods or design sections, results, conclusion, and limitations before summarizing.
 4. Preserve links from the paper body, references, project pages, supplements, and code repositories when they are relevant.
-5. Write a source record under `sources/pdfs/`.
+5. Write a source record under `knowledge-base/sources/pdfs/`.
 6. Link related wiki concept or entity pages in `Links Into Wiki`.
 
 ## Local Files
@@ -26,7 +26,7 @@ The markdown record must include:
 If the PDF is stored in the vault, prefer:
 
 ```text
-sources/_files/pdfs/original-file-name.pdf
+knowledge-base/raw/pdfs/original-file-name.pdf
 ```
 
 Do not move, rename, or delete a user's PDF unless they asked for file organization.

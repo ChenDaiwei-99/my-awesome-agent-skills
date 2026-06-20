@@ -4,10 +4,10 @@ Create one markdown source record per source.
 
 ## Paths
 
-- PDF or literature: `sources/pdfs/YYYY-MM-DD-short-title.md`
-- GitHub repository: `sources/github/owner-repo.md`
-- Web page: `sources/web/YYYY-MM-DD-short-title.md`
-- Other source: `sources/other/YYYY-MM-DD-short-title.md`
+- PDF or literature: `knowledge-base/sources/pdfs/YYYY-MM-DD-short-title.md`
+- GitHub repository: `knowledge-base/sources/github/owner-repo.md`
+- Web page: `knowledge-base/sources/web/YYYY-MM-DD-short-title.md`
+- Other source: `knowledge-base/sources/other/YYYY-MM-DD-short-title.md`
 
 ## Frontmatter
 
@@ -65,4 +65,4 @@ Use empty fields when unknown. Do not invent metadata.
 
 - Preserve original URLs, DOI URLs, arXiv URLs, GitHub URLs, documentation URLs, release URLs, issue or PR URLs, and project websites.
 - If a URL appears important but was not used for the summary, still keep it under `Related links`.
-- Use local paths for downloaded PDFs, checked-out repositories, or stored attachments.
+- Use local paths under `knowledge-base/raw/` for downloaded PDFs, checked-out repositories, or stored attachments when available.

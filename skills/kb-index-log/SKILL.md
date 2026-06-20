@@ -1,6 +1,6 @@
 ---
 name: kb-index-log
-description: Maintain Obsidian LLM knowledge-base index, log, review queue, and advisory-report registry files. Use when adding source records, filing synthesis pages, recording KB maintenance actions, appending unresolved contradictions to wiki/review.md, or keeping wiki/index.md navigable.
+description: Maintain Obsidian LLM knowledge-base index, log, review queue, and advisory-report registry files. Use when adding source records, filing synthesis pages, recording KB maintenance actions, appending unresolved contradictions to knowledge-base/wiki/review.md, or keeping knowledge-base/wiki/index.md navigable.
 ---
 
 # KB Index Log
@@ -9,10 +9,10 @@ Use this skill to keep the knowledge base navigable and auditable.
 
 ## Responsibilities
 
-- Maintain `wiki/index.md` as a topic-oriented map, not a dump of every file.
-- Maintain `wiki/log.md` as append-only chronological history.
-- Maintain `wiki/review.md` as the queue for contradictions, missing evidence, stale claims, and user decisions.
-- Track saved note-advisor reports under `wiki/note-advice/`.
+- Maintain `knowledge-base/wiki/index.md` as a topic-oriented map, not a dump of every file.
+- Maintain `knowledge-base/wiki/log.md` as append-only chronological history.
+- Maintain `knowledge-base/wiki/review.md` as the queue for contradictions, missing evidence, stale claims, and user decisions.
+- Track saved note-advisor reports under `knowledge-base/wiki/note-advice/`.
 
 ## Workflow
 

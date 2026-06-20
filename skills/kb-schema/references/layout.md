@@ -1,57 +1,83 @@
-# Standard Knowledge Base Layout
+# Standard Workspace Layout
 
-Use this layout for new Obsidian-backed LLM knowledge bases unless an existing vault schema says otherwise.
+Use this layout for new Obsidian-backed workspaces unless an existing vault schema says otherwise. It separates assistant-maintained external knowledge from human-owned personal notes.
 
 ```text
 AGENTS.md
 
-notes/
-  inbox/
-  projects/
-  areas/
-  literature-notes/
-  journal/
-
-sources/
-  pdfs/
-  github/
-  web/
-  other/
-  _files/
+knowledge-base/
+  raw/
     pdfs/
     github/
+    web/
     other/
+  sources/
+    pdfs/
+    github/
+    web/
+    other/
+  wiki/
+    index.md
+    log.md
+    review.md
+    concepts/
+    entities/
+    syntheses/
+    note-advice/
 
-wiki/
-  index.md
-  log.md
-  review.md
-  concepts/
-  entities/
-  syntheses/
-  note-advice/
+personal-notes/
+  fleeting/
+  projects/
+    project-slug/
+      timeline.md
+      paper-survey.md
+      ideas.md
+      experiments.md
+      notes.md
+  permanent/
+    advice/
+    habits/
+    principles/
 ```
 
 ## Ownership
 
 | Area | Owner | Agent behavior |
 | --- | --- | --- |
-| `notes/` | Human | Read, link, and suggest. Edit only with explicit permission. |
-| `sources/` | Agent | Maintain one markdown source record per source. Preserve links and local paths. |
-| `sources/_files/` | Human or agent | Store optional immutable local PDFs, repo snapshots, and attachments. Do not delete automatically. |
-| `wiki/` | Agent | Maintain synthesis, indexes, logs, review queues, and advisory reports. |
+| `knowledge-base/raw/` | Human curated, immutable | Read and cite. Do not modify, delete, or reorganize without explicit permission. |
+| `knowledge-base/sources/` | Agent | Maintain one markdown source record per external source. Preserve links and raw paths. |
+| `knowledge-base/wiki/` | Agent | Maintain synthesis, indexes, logs, review queues, and advisory reports. |
+| `personal-notes/fleeting/` | Human | Read and suggest processing. Apply link/frontmatter formatting directly; ask before substantive content changes. |
+| `personal-notes/projects/` | Human | Read, cross-link, and suggest project structure. Apply link/frontmatter formatting directly; ask before substantive content changes. |
+| `personal-notes/permanent/` | Human-owned, agent-assisted | Draft advice, habits, or principles; apply link/frontmatter formatting directly, but ask before writing substantive content. |
 | `AGENTS.md` | Shared contract | Update only when schema or conventions intentionally change. |
 
 ## File Naming
 
 - Use lowercase slugs for generated files.
-- Use `YYYY-MM-DD-short-title.md` for literature and PDF source records when publication date or ingest date matters.
-- Use `owner-repo.md` for GitHub repository source records.
-- Preserve human-chosen filenames in `notes/`.
+- Use `knowledge-base/sources/pdfs/YYYY-MM-DD-short-title.md` for literature and PDF source records when publication date or ingest date matters.
+- Use `knowledge-base/sources/github/owner-repo.md` for GitHub repository source records.
+- Preserve human-chosen filenames in `personal-notes/`.
+- Use `YYYY-MM-DD-short-title.md` for fleeting notes when a timestamp helps later processing.
+- Use stable project slugs under `personal-notes/projects/`.
 
 ## Control Files
 
-- `wiki/index.md`: navigational map of major topics, source groups, and synthesis pages.
-- `wiki/log.md`: append-only maintenance log.
-- `wiki/review.md`: unresolved contradictions, missing evidence, and schema issues requiring human judgment.
-- `wiki/note-advice/`: durable reviews of human notes when the user asks to save them.
+- `knowledge-base/wiki/index.md`: navigational map of major topics, source groups, and synthesis pages.
+- `knowledge-base/wiki/log.md`: append-only maintenance log.
+- `knowledge-base/wiki/review.md`: unresolved contradictions, missing evidence, and schema issues requiring human judgment.
+- `knowledge-base/wiki/note-advice/`: durable reviews of personal notes when the user asks to save them.
+
+## Personal Note Change Gate
+
+Substantive modifications to `personal-notes/` require a separate approval step:
+
+1. Read the relevant notes.
+2. List the exact files to create, edit, rename, move, or delete.
+3. Show the intended content changes or a concise patch-style summary.
+4. Ask for permission and stop.
+5. Apply changes only after the user approves.
+
+This gate applies to new prose, rewritten claims, project scaffolding, permanent-note drafts, moves, renames, deletes, and nontrivial cleanup edits.
+
+Link and frontmatter maintenance is exempt from the approval gate. Agents may directly add or repair wikilinks, backlinks, citation links, tags, aliases, dates, status fields, and other lightweight frontmatter/property formatting when the change does not alter the note's substantive claims.
