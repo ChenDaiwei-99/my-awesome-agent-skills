@@ -6,8 +6,8 @@
 # Knowledge Base Index
 
 ## Sources
-- [[knowledge-base/sources/pdfs/example-paper]]
-- [[knowledge-base/sources/github/owner-repo]]
+- [[knowledge-base/raw/pdfs/example-paper]]
+- [[knowledge-base/raw/github/owner-repo]]
 
 ## Concepts
 - [[knowledge-base/wiki/concepts/example-concept]]
@@ -36,7 +36,7 @@ Append entries in reverse chronological or chronological order according to the 
 ```markdown
 # KB Log
 
-- YYYY-MM-DD HH:mm - Ingested [[knowledge-base/sources/pdfs/example-paper]]; updated [[knowledge-base/wiki/index]].
+- YYYY-MM-DD HH:mm - Ingested [[knowledge-base/raw/pdfs/example-paper]]; updated [[knowledge-base/wiki/index]].
 ```
 
 ## knowledge-base/wiki/review.md

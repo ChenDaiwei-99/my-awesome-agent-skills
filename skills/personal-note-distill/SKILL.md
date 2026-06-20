@@ -12,7 +12,7 @@ Use this skill to turn lived experience and accumulated knowledge into durable p
 1. Read the relevant material from `personal-notes/fleeting/`, `personal-notes/projects/`, conversations supplied by the user, and `knowledge-base/`.
 2. Identify recurring lessons, decision heuristics, habits, warnings, and high-level principles.
 3. Search `personal-notes/permanent/` for existing related notes before creating a new one.
-4. Link each candidate principle back to its origins: fleeting notes, project timeline entries, ideas, experiments, source records, wiki pages, or conversation excerpts.
+4. Link each candidate principle back to its origins: fleeting notes, project timeline entries, ideas, experiments, raw-source records, wiki pages, or conversation excerpts.
 5. Separate durable advice from temporary todos, project-specific facts, and unsupported speculation.
 6. Draft a new permanent note or propose edits to an existing one.
 7. Apply any needed link/frontmatter formatting directly when it only repairs structure.
@@ -48,7 +48,7 @@ Use this structure:
 - Preserve nuance and limits; avoid universal claims from narrow evidence.
 - Prefer "When X, do Y because Z" over abstract slogans.
 - Include practical cues that help the user notice when the principle applies.
-- Link to source records and project experiments when the advice depends on external knowledge.
+- Link to raw-source records and project experiments when the advice depends on external knowledge.
 - Link to fleeting or project notes when the advice comes from personal experience.
 - Treat substantive output as a draft until the user approves writing it into `personal-notes/`.
 

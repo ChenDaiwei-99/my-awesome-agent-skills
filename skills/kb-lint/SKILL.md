@@ -12,8 +12,8 @@ Use this skill to inspect knowledge-base health without making risky rewrites.
 1. Read the vault root `AGENTS.md`.
 2. Confirm the expected folders and control files exist.
 3. Check human-owned `personal-notes/` for schema drift only; do not edit them during lint.
-4. Check source records for required frontmatter, required body sections, preserved links, and source locators.
-5. Check wiki pages for citations back to source records or human notes.
+4. Check raw-source records for required frontmatter, required body sections, preserved links, and source locators.
+5. Check wiki pages for citations back to raw-source records or human notes.
 6. Search for duplicate concepts, orphan synthesis pages, broken wikilinks, and missing backlinks.
 7. Identify contradictions or stale claims and route them to `knowledge-base/wiki/review.md`.
 8. Produce a prioritized report with concrete file paths and suggested fixes.
@@ -35,7 +35,7 @@ Use [lint-checks.md](references/lint-checks.md) for the full checklist.
 
 Group findings by severity:
 
-- `Critical`: broken schema, missing source records, or ownership violations.
+- `Critical`: broken schema, missing raw-source records, or ownership violations.
 - `High`: contradictions, missing citations, or important dead links.
 - `Medium`: duplicate concepts, orphan wiki pages, weak summaries.
 - `Low`: naming drift, minor frontmatter gaps, index freshness.

@@ -1,6 +1,6 @@
 # PDF Ingestion
 
-Create one source record for each PDF.
+Create one raw-source record for each PDF.
 
 ## Required Output
 
@@ -18,7 +18,7 @@ The markdown record must include:
 2. Extract text using available local tools. If extraction is partial, say so in `Open Questions`.
 3. Read abstract, introduction, methods or design sections, results, conclusion, and limitations before summarizing.
 4. Preserve links from the paper body, references, project pages, supplements, and code repositories when they are relevant.
-5. Write a source record under `knowledge-base/sources/pdfs/`.
+5. Write a raw-source record under `knowledge-base/raw/pdfs/`.
 6. Link related wiki concept or entity pages in `Links Into Wiki`.
 
 ## Local Files

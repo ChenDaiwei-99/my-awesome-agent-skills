@@ -11,11 +11,6 @@ knowledge-base/
     github/
     web/
     other/
-  sources/
-    pdfs/
-    github/
-    web/
-    other/
   wiki/
     index.md
     log.md
@@ -44,8 +39,7 @@ personal-notes/
 
 | Area | Owner | Agent behavior |
 | --- | --- | --- |
-| `knowledge-base/raw/` | Human curated, immutable | Read and cite. Do not modify, delete, or reorganize without explicit permission. |
-| `knowledge-base/sources/` | Agent | Maintain one markdown source record per external source. Preserve links and raw paths. |
+| `knowledge-base/raw/` | Agent maintained, human curated by request | Maintain one markdown raw-source record per external source. Preserve links and raw paths. Do not delete or reorganize records without explicit permission. |
 | `knowledge-base/wiki/` | Agent | Maintain synthesis, indexes, logs, review queues, and advisory reports. |
 | `personal-notes/fleeting/` | Human | Read and suggest processing. Apply link/frontmatter formatting directly; ask before substantive content changes. |
 | `personal-notes/projects/` | Human | Read, cross-link, and suggest project structure. Apply link/frontmatter formatting directly; ask before substantive content changes. |
@@ -55,8 +49,8 @@ personal-notes/
 ## File Naming
 
 - Use lowercase slugs for generated files.
-- Use `knowledge-base/sources/pdfs/YYYY-MM-DD-short-title.md` for literature and PDF source records when publication date or ingest date matters.
-- Use `knowledge-base/sources/github/owner-repo.md` for GitHub repository source records.
+- Use `knowledge-base/raw/pdfs/YYYY-MM-DD-short-title.md` for literature and PDF raw-source records when publication date or ingest date matters.
+- Use `knowledge-base/raw/github/owner-repo.md` for GitHub repository raw-source records.
 - Preserve human-chosen filenames in `personal-notes/`.
 - Use `YYYY-MM-DD-short-title.md` for fleeting notes when a timestamp helps later processing.
 - Use stable project slugs under `personal-notes/projects/`.

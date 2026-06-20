@@ -64,7 +64,7 @@ tags: []
 Use these files consistently:
 
 - `timeline.md`: project schedule, milestones, deadlines, meetings, and decisions.
-- `paper-survey.md`: relevant papers and source records linked to `knowledge-base/sources/` or `knowledge-base/wiki/`.
+- `paper-survey.md`: relevant papers and raw-source records linked to `knowledge-base/raw/` or `knowledge-base/wiki/`.
 - `ideas.md`: potential ideas to try, each with a stable heading or block ID.
 - `experiments.md`: experiment plans, runs, results, and links back to ideas.
 - `notes.md`: miscellaneous project context that does not yet fit elsewhere.

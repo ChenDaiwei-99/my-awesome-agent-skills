@@ -1,6 +1,6 @@
 ---
 name: kb-query
-description: Answer questions from an Obsidian LLM knowledge base and personal note space using source records, wiki synthesis, and human notes with citations and preserved source links. Use when the user asks about knowledge stored in knowledge-base or personal-notes, wants a research answer grounded in sources, or asks for more detail that may require following preserved website links.
+description: Answer questions from an Obsidian LLM knowledge base and personal note space using raw-source records, wiki synthesis, and human notes with citations and preserved source links. Use when the user asks about knowledge stored in knowledge-base or personal-notes, wants a research answer grounded in sources, or asks for more detail that may require following preserved website links.
 ---
 
 # KB Query
@@ -11,10 +11,10 @@ Use this skill to answer from the workspace while respecting the boundary betwee
 
 1. Read the vault root `AGENTS.md` for schema, citation, and conflict rules.
 2. Search `knowledge-base/wiki/index.md`, `knowledge-base/wiki/concepts/`, `knowledge-base/wiki/entities/`, and `knowledge-base/wiki/syntheses/` for existing synthesis.
-3. Search `knowledge-base/sources/` for source records with summaries, takeaways, keywords, and preserved links.
+3. Search `knowledge-base/raw/` for raw-source records with summaries, takeaways, keywords, and preserved links.
 4. Search `personal-notes/` for relevant human understanding, experiences, project context, or permanent advice.
 5. Answer from local KB content first.
-6. If the user asks for deeper detail and the local record is insufficient, follow preserved URLs from source records and cite the retrieved web detail.
+6. If the user asks for deeper detail and the local record is insufficient, follow preserved URLs from raw-source records and cite the retrieved web detail.
 7. Distinguish source-backed facts, wiki synthesis, and human-authored interpretation.
 8. If evidence conflicts, state the conflict and cite both sides rather than resolving it silently.
 9. If the user asks to save the answer as KB synthesis, create or update a page under `knowledge-base/wiki/syntheses/` and log it.
